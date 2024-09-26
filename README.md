@@ -1,7 +1,9 @@
-# VMU Icon Converter
+
 
 Ian micheal
 I wrote this in C and using normal bmp format no stuffing around easy to use tool..
+
+# VMU Icon Converter
 
 This tool converts a 48x32 pixel BMP image into a VMU icon format compatible with Dreamcast VMU (Visual Memory Unit) icons. It generates a C header file containing the icon data in XPM format.
 
@@ -50,7 +52,7 @@ Contributions to improve the converter are welcome. Please feel free to submit p
 
 ## License
 
- MIT License
+[Specify the license here, e.g., MIT License, GPL, etc.]
 
 ## Acknowledgements
 
