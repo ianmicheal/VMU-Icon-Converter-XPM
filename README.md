@@ -79,6 +79,15 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 This tool uses the [STB image library](https://github.com/nothings/stb) for image processing.
 
+## Compiling on Linux
+
+To compile the VMU Icon Converter on Linux:
+
+1. Ensure you have GCC and Make installed.
+2. Place the `Makefile`, `vmuxpm.c`, and `stb_image.h` in the same directory.
+3. Open a terminal in that directory.
+4. Run the following command to compile:
+
 ---
 
 <p align="center">
