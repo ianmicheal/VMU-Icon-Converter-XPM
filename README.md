@@ -1,8 +1,3 @@
-
-
-Ian micheal
-I wrote this in C and using normal bmp format no stuffing around easy to use tool..
-
 # VMU Icon Converter
 
 This tool converts a 48x32 pixel BMP image into a VMU icon format compatible with Dreamcast VMU (Visual Memory Unit) icons. It generates a C header file containing the icon data in XPM format.
@@ -16,16 +11,31 @@ This tool converts a 48x32 pixel BMP image into a VMU icon format compatible wit
 ## Requirements
 
 - 🖥️ Windows operating system
-- 🖼️ A 48x32 pixel BMP image file named `input_file.bmp`
+- 🖼️ A 48x32 pixel BMP image file named `input_file.bmp` (see BMP File Requirements below)
 - 🛠️ The `vmuxpm.exe` executable (provided in this repository)
+
+## BMP File Requirements
+
+To ensure proper conversion, your input BMP file must meet the following specifications:
+
+- 📏 **Dimensions**: Exactly 48 pixels wide by 32 pixels high
+- 🎨 **Color Depth**: 24-bit (true color) or 8-bit (256 color)
+- 📁 **File Format**: Standard Windows BMP format (uncompressed)
+- 🔠 **File Name**: Must be named `input_file.bmp`
+
+**Note**: The converter will transform the image into black and white for VMU display. For best results:
+- Use high contrast in your original image
+- Avoid complex details that may not render well in black and white
+- Test different versions of your icon to find the best VMU representation
 
 ## Usage
 
 1. Clone or download this repository to your local machine.
-2. Place your 48x32 pixel BMP image in the same directory as the batch file and rename it to `input_file.bmp`.
-3. Ensure `vmuxpm.exe` is in the same directory.
-4. Run the `convert_to_vmu_icon.bat` batch file by double-clicking it or executing it from the command line.
-5. If successful, a `vmu_icon.h` file will be generated in the same directory.
+2. Create or prepare your 48x32 pixel BMP image according to the specifications above.
+3. Place your BMP image in the same directory as the batch file and rename it to `input_file.bmp`.
+4. Ensure `vmuxpm.exe` is in the same directory.
+5. Run the `convert_to_vmu_icon.bat` batch file by double-clicking it or executing it from the command line.
+6. If successful, a `vmu_icon.h` file will be generated in the same directory.
 
 ## File Descriptions
 
@@ -42,9 +52,10 @@ The converter reads the input BMP file and converts it into a black and white im
 
 ## Troubleshooting
 
-- ✅ Make sure your input image is exactly 48x32 pixels and in BMP format.
-- ✅ Ensure all files (`vmuxpm.exe`, `input_file.bmp`, and the batch file) are in the same directory.
+- ✅ Ensure your input image meets all the BMP file requirements listed above.
+- ✅ Make sure all files (`vmuxpm.exe`, `input_file.bmp`, and the batch file) are in the same directory.
 - ✅ If you encounter any errors, check the console output for specific error messages.
+- ✅ If the output icon doesn't look as expected, try adjusting the contrast in your original image and convert again.
 
 ## Contributing
 
