@@ -67,7 +67,7 @@ The converter reads the input BMP file, which should already be in a black and w
 - ✅ If you encounter any errors, check the console output for specific error messages.
 
 ## Contributing
-
+Credit to enfilade for vmu icon art.
 Contributions to improve the converter are welcome. Please feel free to submit pull requests or open issues for any bugs or enhancements.
 
 ## License
