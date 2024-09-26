@@ -81,12 +81,66 @@ This tool uses the [STB image library](https://github.com/nothings/stb) for imag
 
 ## Compiling on Linux
 
-To compile the VMU Icon Converter on Linux:
+# Using VMU Icon Converter on Linux
 
-1. Ensure you have GCC and Make installed.
-2. Place the `Makefile`, `vmuxpm.c`, and `stb_image.h` in the same directory.
-3. Open a terminal in that directory.
-4. Run the following command to compile:
+## Compilation
+
+1. Ensure you have GCC and Make installed on your system.
+2. Place the following files in the same directory:
+   - `Makefile`
+   - `vmuxpm.c`
+   - `stb_image.h`
+3. Open a terminal and navigate to this directory.
+4. Compile the program by running:
+   ```
+   make
+   ```
+5. This will create an executable named `vmuxpm`.
+
+## Preparing Your Input File
+
+1. Create or obtain a 48x32 pixel BMP image.
+2. Ensure it's in indexed color mode with 2 colors (black and white).
+3. Save or copy this image to the same directory as the `vmuxpm` executable.
+4. Rename the image to `input_file.bmp`.
+
+## Running the Converter
+
+1. In the terminal, make sure you're in the directory containing `vmuxpm` and `input_file.bmp`.
+2. Run the converter with:
+   ```
+   ./vmuxpm input_file.bmp
+   ```
+3. If successful, this will create a file named `vmu_icon.h` in the same directory.
+
+## Viewing the Output
+
+1. You can view the contents of `vmu_icon.h` with any text editor, for example:
+   ```
+   cat vmu_icon.h
+   ```
+   or
+   ```
+   nano vmu_icon.h
+   ```
+
+## Troubleshooting
+
+- If you get a "permission denied" error when trying to run `./vmuxpm`, you may need to make it executable:
+  ```
+  chmod +x vmuxpm
+  ```
+- Ensure your input BMP file meets the specifications (48x32 pixels, 2-color indexed).
+- If you encounter any errors, check the terminal output for error messages.
+
+## Cleaning Up
+
+To remove the compiled executable:
+```
+make clean
+```
+
+Remember, the generated `vmu_icon.h` file is what you'll include in your Dreamcast development project to use the VMU icon.
 
 ---
 
