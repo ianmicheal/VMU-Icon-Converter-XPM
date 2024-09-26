@@ -1,3 +1,10 @@
+/*
+* Original Author:Ian micheal
+ * LICENSE: The MIT License (MIT)
+ * ------------------------------
+ * Copyright (c) 2024 Ian Michael
+*/
+
 #define STB_IMAGE_IMPLEMENTATION
 #include "stb_image.h"
 #include <stdio.h>
